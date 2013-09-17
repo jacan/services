@@ -7,7 +7,12 @@ using NServiceBus;
 
 namespace JacksFramework.Service.Endpoints
 {
-    public class ServiceHandler : IConfigureThisEndpoint, Asa
+    public abstract class ServiceHandler : IHandleMessages<EventBase>
     {
+
+        public void Handle(EventBase message)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

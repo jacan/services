@@ -48,13 +48,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EndpointConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\Endpoints\ServiceHandler.cs" />
     <Compile Include="Service\Endpoints\ServicePublisher.cs" />
     <Compile Include="Repositories\IRepositoryContext.cs" />
     <Compile Include="Service\CommandBase.cs" />
+    <Compile Include="Service\Endpoints\ServiceSubscriber.cs" />
+    <Compile Include="Service\Endpoints\DefaultSubscriptionAuthorizer.cs" />
     <Compile Include="Service\Endpoints\UnobtrusiveConfiguration.cs" />
+    <Compile Include="Service\EventBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

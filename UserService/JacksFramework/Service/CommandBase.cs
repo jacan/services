@@ -1,13 +1,8 @@
 ﻿using NServiceBus;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace JacksFramework.Service
 {
-    public class CommandBase : ICommand
+    public abstract class CommandBase : ICommand
     {
     }
 }
