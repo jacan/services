@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="NewBasicUser.cs" />
+    <Compile Include="Commands\ChangeUsernameCommand.cs" />
     <Compile Include="Commands\CreateUserCommand.cs" />
     <Compile Include="Events\UserCreatedEvent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
