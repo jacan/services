@@ -12,7 +12,7 @@ namespace UserService.Types
         string Email { get; set; }
     }
 
-    public class BasicUser
+    public class NewBasicUser
     {
         public string Username { get; set; }
         public string Email { get; set; }

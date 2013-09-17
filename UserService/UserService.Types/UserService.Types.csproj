@@ -39,7 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BasicUser.cs" />
+    <Compile Include="NewBasicUser.cs" />
     <Compile Include="Commands\CreateUserCommand.cs" />
     <Compile Include="Events\UserCreatedEvent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
