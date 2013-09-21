@@ -2,7 +2,8 @@
 
 namespace JacksFramework.Service
 {
-    public abstract class CommandBase : ICommand
-    {
-    }
+	public abstract class CommandBase : MessageBase
+	{
+
+	}
 }
