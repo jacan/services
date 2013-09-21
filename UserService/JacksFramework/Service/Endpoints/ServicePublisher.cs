@@ -1,6 +1,6 @@
 ﻿using NServiceBus;
 
-namespace JacksFramework.Service.Publisher
+namespace JacksFramework.Service.Endpoints
 {
 	public class ServicePublisher : IConfigureThisEndpoint, AsA_Publisher
 	{
