@@ -1,10 +1,9 @@
-﻿using System;
-using NServiceBus;
+﻿using NServiceBus;
 
 namespace JacksFramework.Service
 {
-    public abstract class EventBase : IEvent
-    {
-        public Guid Id { get; set; }
-    }
+	public abstract class EventBase : MessageBase
+	{
+
+	}
 }
