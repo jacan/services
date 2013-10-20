@@ -11,7 +11,7 @@ namespace JacksFramework.Service.Endpoints
 			_bus = bus;
 		}
 
-		public void Publish(IEvent eventMessage)
+		public void Publish(IEventMessage eventMessage)
 		{
 			_bus.Publish(eventMessage);
 		}

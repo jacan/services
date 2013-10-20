@@ -2,7 +2,7 @@
 
 namespace JacksFramework.Service
 {
-	public abstract class CommandBase : MessageBase
+	public interface IEventMessage : IEvent, IMessageBase
 	{
 
 	}

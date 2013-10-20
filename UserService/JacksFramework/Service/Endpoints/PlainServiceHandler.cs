@@ -7,7 +7,7 @@ using NServiceBus;
 
 namespace JacksFramework.Service.Endpoints
 {
-    public abstract class PlainServiceHandler : IHandleMessages<EventBase>
+    public abstract class PlainServiceHandler : IHandleMessages<IEventMessage>
     {
         private readonly IEnumerable<IMessageHandleSink> _messageSinks;
         
@@ -16,7 +16,7 @@ namespace JacksFramework.Service.Endpoints
             _messageSinks = messageSinks;
         }
 
-        public void Handle(EventBase message)
+        public void Handle(IEventMessage message)
         {
             _messageSinks.AsParallel()
                 .ForAll(x => x.Handle(message));
