@@ -1,4 +1,6 @@
-﻿using NServiceBus;
+﻿using JacksFramework.Service.Endpoints;
+using NServiceBus;
+using System;
 using System.Collections.Concurrent;
 
 namespace JacksFramework.Service
@@ -26,6 +28,16 @@ namespace JacksFramework.Service
 
 		public void Add(IMessageBase command)
 		{
+			if (command.Id.Equals(Guid.Empty) || command.Timestamp == null)
+			{
+				throw new MessageIdInvalidException();
+			}
+
+			if (command.Timestamp == null)
+			{
+				throw new MessageTimestampInvalidException();
+			}
+
 			_commands.Add(command);
 		}
 
