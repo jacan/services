@@ -5,6 +5,6 @@ namespace JacksFramework.Service
 	public interface IMessageBase
 	{
 		Guid Id { get; set; }
-		DateTime Timestamp { get; set; }
+		DateTime? Timestamp { get; set; }
 	}
 }
