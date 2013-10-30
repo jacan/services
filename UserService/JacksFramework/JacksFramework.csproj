@@ -60,6 +60,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infrastructure\WebStructure\ControllerActivator.cs" />
+    <Compile Include="Infrastructure\WebStructure\StructureMapDependencyResolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\CommandDistributor.cs" />
     <Compile Include="Service\IMessageHandleSink.cs" />
