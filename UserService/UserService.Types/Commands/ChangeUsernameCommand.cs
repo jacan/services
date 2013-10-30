@@ -3,7 +3,7 @@ using System;
 
 namespace UserService.Types.Commands
 {
-	public class ChangeUsernameCommand : ICommandMessage
+	public class ChangeUsernameCommand : IUserCommand
 	{
 		public Guid Id { get; set; }
 		public DateTime? Timestamp { get; set; }
