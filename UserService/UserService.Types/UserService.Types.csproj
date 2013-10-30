@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\IUserCommand.cs" />
     <Compile Include="NewBasicUser.cs" />
     <Compile Include="Commands\ChangeUsernameCommand.cs" />
     <Compile Include="Commands\CreateUserCommand.cs" />
