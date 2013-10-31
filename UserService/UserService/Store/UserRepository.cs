@@ -1,22 +1,19 @@
 ﻿using JacksFramework.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace UserService.Store
 {
-    public class UserRepository
-    {
-        public UserRepository(IRepositoryContext context)
-        {
+	public class UserRepository
+	{
+		protected IRepositoryContext _context;
 
-        }
+		public UserRepository(IRepositoryContext context)
+		{
+			_context = context;
+		}
 
-        public void CreateUser(string username, string email)
-        {
-
-        }
-    }
+		public void CreateUser(string username, string email)
+		{
+			_context.Add((email));
+		}
+	}
 }
