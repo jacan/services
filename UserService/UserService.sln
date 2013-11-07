@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RavenStore", "RavenStore\Ra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService.Test", "UserService.Test\UserService.Test.csproj", "{F51DA17C-3EDD-4515-9CEF-6960852F1579}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService.Types", "UserService.Types\UserService.Types.csproj", "{E50D6FAD-5113-4EE7-BCBB-05DC7FF39C93}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService.Messages", "UserService.Types\UserService.Messages.csproj", "{E50D6FAD-5113-4EE7-BCBB-05DC7FF39C93}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JacksFramework", "JacksFramework\JacksFramework.csproj", "{700A42F5-4337-46F7-8B9A-62C50EA923B2}"
 EndProject

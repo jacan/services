@@ -6,7 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using UserService.Frontend.Models;
-using UserService.Types.Commands;
+using UserService.Messages.Commands;
 
 namespace UserService.Frontend.Controllers
 {

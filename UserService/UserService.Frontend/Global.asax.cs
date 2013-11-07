@@ -8,7 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-using UserService.Types.Events;
+using UserService.Messages.Events;
 
 namespace UserService.Frontend
 {
@@ -23,7 +23,7 @@ namespace UserService.Frontend
 
 			var container = InitializeDependices();
 
-			var bus = NsbBootstrapper.InitializeWebDefaultXml(container);
+			NsbBootstrapper.InitializeWebDefaultXml(container);
 		}
 
 		protected IContainer InitializeDependices()

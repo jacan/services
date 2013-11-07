@@ -155,7 +155,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -176,9 +178,9 @@
       <Project>{700a42f5-4337-46f7-8b9a-62c50ea923b2}</Project>
       <Name>JacksFramework</Name>
     </ProjectReference>
-    <ProjectReference Include="..\UserService.Types\UserService.Types.csproj">
+    <ProjectReference Include="..\UserService.Types\UserService.Messages.csproj">
       <Project>{e50d6fad-5113-4ee7-bcbb-05dc7ff39c93}</Project>
-      <Name>UserService.Types</Name>
+      <Name>UserService.Messages</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

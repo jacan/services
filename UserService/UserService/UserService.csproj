@@ -89,9 +89,9 @@
       <Project>{73f68164-04c9-4124-a468-03d46dda1ec0}</Project>
       <Name>RavenStore</Name>
     </ProjectReference>
-    <ProjectReference Include="..\UserService.Types\UserService.Types.csproj">
+    <ProjectReference Include="..\UserService.Types\UserService.Messages.csproj">
       <Project>{e50d6fad-5113-4ee7-bcbb-05dc7ff39c93}</Project>
-      <Name>UserService.Types</Name>
+      <Name>UserService.Messages</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
