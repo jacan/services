@@ -1,57 +1,58 @@
 ﻿using System;
 using JacksFramework.Extensions.NServiceBus;
 using NServiceBus;
+using StructureMap;
 
 namespace JacksFramework.Service.Configuration
 {
-	public static class NsbBootstrapper
+	public class NsbBootstrapper
 	{
 		/// <summary>
 		/// Initializes default NServiceBus with Transaction, binary serialization on MSMQ transport, StructureMap container
 		/// </summary>
-		public static void InitializeDefaultBinary()
+		public static void InitializeDefaultXmlForHost(IContainer container=null)
 		{
 			Configure.Transactions.Enable();
-			Configure.Serialization.Binary();
+			Configure.Serialization.Xml();
 
 			Configure.With()
-					 .StructureMapBuilder()
+					 .StructureMapBuilder(container)
 					 .Log4Net()
 					 .UseTransport<Msmq>()
 					 .PurgeOnStartup(false)
-					 .UnicastBus()
-					 .CreateBus()
-					 .Start();
+					 .UnicastBus();
 		}
 
-		public static void InitializeWebDefaultBinary()
+		public static IBus InitializeWebDefaultXml(IContainer container=null)
 		{
 			Configure.Transactions.Enable();
-			Configure.Serialization.Binary();
+			Configure.Serialization.Xml();
 
-			Configure.With()
-					 .StructureMapBuilder()
+			return Configure.With()
+					 .StructureMapBuilder(container)
 					 .ForMvc()
 					 .Log4Net()
 					 .UseTransport<Msmq>()
 					 .PurgeOnStartup(false)
 					 .UnicastBus()
+					 .ImpersonateSender(false)
 					 .CreateBus()
 					 .Start();
 		}
 
-		public static void InitializeWebDefaultJSON()
+		public IBus InitializeWebDefaultJSON(IContainer container=null)
 		{
 			Configure.Transactions.Enable();
 			Configure.Serialization.Json();
 
-			Configure.With()
-					 .StructureMapBuilder()
+			return Configure.With()
+					 .StructureMapBuilder(container)
 					 .ForMvc()
 					 .Log4Net()
 					 .UseTransport<Msmq>()
 					 .PurgeOnStartup(false)
 					 .UnicastBus()
+					 .ImpersonateSender(false)
 					 .CreateBus()
 					 .Start();
 		}
