@@ -30,23 +30,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NServiceBus, Version=4.1.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+    <Reference Include="NServiceBus, Version=4.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\NServiceBus.Interfaces.4.1.0\lib\net40\NServiceBus.dll</HintPath>
+      <HintPath>..\packages\NServiceBus.Interfaces.4.2.0\lib\net40\NServiceBus.dll</HintPath>
     </Reference>
-    <Reference Include="NServiceBus.Core, Version=4.1.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+    <Reference Include="NServiceBus.Core, Version=4.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\NServiceBus.4.1.0\lib\net40\NServiceBus.Core.dll</HintPath>
+      <HintPath>..\packages\NServiceBus.4.2.0\lib\net40\NServiceBus.Core.dll</HintPath>
     </Reference>
-    <Reference Include="NServiceBus.Host, Version=4.1.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+    <Reference Include="NServiceBus.Host, Version=4.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\NServiceBus.Host.4.1.0\lib\net40\NServiceBus.Host.exe</HintPath>
+      <HintPath>..\packages\NServiceBus.Host.4.2.0\lib\net40\NServiceBus.Host.exe</HintPath>
     </Reference>
-    <Reference Include="NServiceBus.ObjectBuilder.StructureMap, Version=4.1.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+    <Reference Include="NServiceBus.ObjectBuilder.StructureMap, Version=4.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\NServiceBus.StructureMap.4.1.0\lib\net40\NServiceBus.ObjectBuilder.StructureMap.dll</HintPath>
+      <HintPath>..\packages\NServiceBus.StructureMap.4.2.0\lib\net40\NServiceBus.ObjectBuilder.StructureMap.dll</HintPath>
     </Reference>
-    <Reference Include="StructureMap">
+    <Reference Include="StructureMap, Version=2.6.4.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\structuremap.2.6.4.1\lib\net40\StructureMap.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -69,13 +70,13 @@
     <Compile Include="Service\Endpoints\MessageIdInvalidException.cs" />
     <Compile Include="Service\Endpoints\MessageTimestampInvalidException.cs" />
     <Compile Include="Service\ICommandMessage.cs" />
-    <Compile Include="Service\IMessageHandleSink.cs" />
+    <Compile Include="Service\IEventMessage.cs" />
     <Compile Include="Service\IMessageBase.cs" />
+    <Compile Include="Service\IMessageHandleSink.cs" />
     <Compile Include="Service\Endpoints\PlainServiceHandler.cs" />
     <Compile Include="Repositories\IRepositoryContext.cs" />
     <Compile Include="Service\Endpoints\DefaultSubscriptionAuthorizer.cs" />
     <Compile Include="Service\Endpoints\UnobtrusiveConfiguration.cs" />
-    <Compile Include="Service\IEventMessage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
