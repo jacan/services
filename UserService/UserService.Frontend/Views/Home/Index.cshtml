@@ -1,4 +1,5 @@
-﻿@{
+﻿@model UserService.Frontend.Models.NewBasicUser
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -27,5 +28,34 @@
         <h2>Web Hosting</h2>
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
         <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Start by signing up, with a desired username and an email</h2>
+        @using (Html.BeginForm("Create", "Home", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            <br />
+            <fieldset>
+                <legend>Start by signing up, with a desired username and an email</legend>
+                <div>
+                    @Html.LabelFor(x => x.DesiredUsername)
+                    @Html.TextBoxFor(x => x.DesiredUsername)
+                    @Html.ValidationMessageFor(x => x.DesiredUsername)
+                </div>
+                <div>
+                    @Html.LabelFor(x => x.MailForVerification)
+                    @Html.TextBoxFor(x => x.MailForVerification)
+                    @Html.ValidationMessageFor(x => x.MailForVerification)
+                </div>
+                <div>
+                    <input type="submit" title="Sign up" />
+                </div>
+            </fieldset>
+        }
+
     </div>
 </div>
