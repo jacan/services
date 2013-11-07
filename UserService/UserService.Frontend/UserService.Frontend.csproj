@@ -178,7 +178,7 @@
       <Project>{700a42f5-4337-46f7-8b9a-62c50ea923b2}</Project>
       <Name>JacksFramework</Name>
     </ProjectReference>
-    <ProjectReference Include="..\UserService.Types\UserService.Messages.csproj">
+    <ProjectReference Include="..\UserService.Messages\UserService.Messages.csproj">
       <Project>{e50d6fad-5113-4ee7-bcbb-05dc7ff39c93}</Project>
       <Name>UserService.Messages</Name>
     </ProjectReference>
