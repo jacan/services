@@ -9,13 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RavenStore", "RavenStore\Ra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService.Test", "UserService.Test\UserService.Test.csproj", "{F51DA17C-3EDD-4515-9CEF-6960852F1579}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService.Types", "UserService.Types\UserService.Types.csproj", "{E50D6FAD-5113-4EE7-BCBB-05DC7FF39C93}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JacksFramework", "JacksFramework\JacksFramework.csproj", "{700A42F5-4337-46F7-8B9A-62C50EA923B2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JacksExtensions", "JacksExtensions\JacksExtensions.csproj", "{3077E1EF-FB68-4EEB-8A66-8872791F1D73}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService.Frontend", "UserService.Frontend\UserService.Frontend.csproj", "{9B2C56A6-4080-4E04-8BF1-8CDB58FA77E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService.Messages", "UserService.Messages\UserService.Messages.csproj", "{E50D6FAD-5113-4EE7-BCBB-05DC7FF39C93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,6 @@ Global
 		{F51DA17C-3EDD-4515-9CEF-6960852F1579}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F51DA17C-3EDD-4515-9CEF-6960852F1579}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F51DA17C-3EDD-4515-9CEF-6960852F1579}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E50D6FAD-5113-4EE7-BCBB-05DC7FF39C93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E50D6FAD-5113-4EE7-BCBB-05DC7FF39C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E50D6FAD-5113-4EE7-BCBB-05DC7FF39C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E50D6FAD-5113-4EE7-BCBB-05DC7FF39C93}.Release|Any CPU.Build.0 = Release|Any CPU
 		{700A42F5-4337-46F7-8B9A-62C50EA923B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{700A42F5-4337-46F7-8B9A-62C50EA923B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{700A42F5-4337-46F7-8B9A-62C50EA923B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{9B2C56A6-4080-4E04-8BF1-8CDB58FA77E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B2C56A6-4080-4E04-8BF1-8CDB58FA77E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B2C56A6-4080-4E04-8BF1-8CDB58FA77E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E50D6FAD-5113-4EE7-BCBB-05DC7FF39C93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E50D6FAD-5113-4EE7-BCBB-05DC7FF39C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E50D6FAD-5113-4EE7-BCBB-05DC7FF39C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E50D6FAD-5113-4EE7-BCBB-05DC7FF39C93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

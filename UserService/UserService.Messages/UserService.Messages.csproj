@@ -7,8 +7,8 @@
     <ProjectGuid>{E50D6FAD-5113-4EE7-BCBB-05DC7FF39C93}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UserService.Types</RootNamespace>
-    <AssemblyName>UserService.Types</AssemblyName>
+    <RootNamespace>UserService.Messages</RootNamespace>
+    <AssemblyName>UserService.Messages</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

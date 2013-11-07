@@ -1,7 +1,7 @@
 ﻿using JacksFramework.Service;
 using System;
 
-namespace UserService.Types.Events
+namespace UserService.Messages.Events
 {
 	public interface UserCreatedEvent : IEventMessage
 	{

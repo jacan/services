@@ -1,7 +1,7 @@
 ﻿using JacksFramework.Service;
 using System;
 
-namespace UserService.Types.Commands
+namespace UserService.Messages.Commands
 {
 	public class ChangeUsernameCommand : IUserCommand
 	{

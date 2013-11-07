@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NServiceBus;
-using UserService.Types.Commands;
+using UserService.Messages.Commands;
 using UserService.Store;
-using UserService.Types;
-using UserService.Types.Events;
+using UserService.Messages.Events;
 
 namespace UserService
 {
