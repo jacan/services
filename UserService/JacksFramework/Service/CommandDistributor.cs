@@ -28,10 +28,10 @@ namespace JacksFramework.Service
 
 		public void Add(IMessageBase command)
 		{
-			if (command.Id.Equals(Guid.Empty) || command.Timestamp == null)
-			{
-				throw new MessageIdInvalidException();
-			}
+			//if (command.Id.Equals(Guid.Empty) || command.Timestamp == null)
+			//{
+			//	throw new MessageIdInvalidException();
+			//}
 
 			if (command.Timestamp == null)
 			{
