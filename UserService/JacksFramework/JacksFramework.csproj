@@ -72,9 +72,7 @@
     <Compile Include="Service\IMessageHandleSink.cs" />
     <Compile Include="Service\IMessageBase.cs" />
     <Compile Include="Service\Endpoints\PlainServiceHandler.cs" />
-    <Compile Include="Service\Endpoints\ServicePublisher.cs" />
     <Compile Include="Repositories\IRepositoryContext.cs" />
-    <Compile Include="Service\Endpoints\ServiceSubscriber.cs" />
     <Compile Include="Service\Endpoints\DefaultSubscriptionAuthorizer.cs" />
     <Compile Include="Service\Endpoints\UnobtrusiveConfiguration.cs" />
     <Compile Include="Service\IEventMessage.cs" />
