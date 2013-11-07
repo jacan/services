@@ -1,8 +1,14 @@
-﻿using JacksFramework.Repositories;
+﻿using System;
+using JacksFramework.Repositories;
 
 namespace UserService.Store
 {
-	public class UserRepository
+	public interface IUserRepository
+	{
+		Guid CreateUser(string userName, string emailAddress);
+	}
+
+	public class UserRepository : IUserRepository
 	{
 		protected IRepositoryContext _context;
 
@@ -11,9 +17,16 @@ namespace UserService.Store
 			_context = context;
 		}
 
-		public void CreateUser(string username, string email)
+		public Guid CreateUser(string username, string email)
 		{
-			_context.Add((email));
+			_context.Add(new
+				{ 
+					UserName = username, 
+					EMail = email 
+				});
+
+			//TEST : CHANGE!
+			return Guid.NewGuid();
 		}
 	}
 }

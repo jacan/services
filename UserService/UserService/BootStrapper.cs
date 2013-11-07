@@ -4,14 +4,13 @@ namespace UserService
 {
 	public class BootStrapper
 	{
-		public static void BootStrapDependencies()
+		public static IContainer BootStrapDependencies()
 		{
-			ObjectFactory.Initialize(x => x.Scan(scan =>
-			{
-				scan.TheCallingAssembly();
-				scan.Assembly("UserService.Types");
-				scan.WithDefaultConventions();
-			}));
+			var serviceContainer = new Container(container => {
+				container.AddRegistry<ServiceRegistry>();
+			});
+
+			return serviceContainer;
 		}
 	}
 }
